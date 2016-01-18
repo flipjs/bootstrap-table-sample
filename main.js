@@ -10,20 +10,20 @@ import './css/custom.css'
 //   console.log('selected: ' + isSelected)
 // }
 
-const onClick = (cell, row) => {
-  console.log('cell:', cell)
-  console.log('row:', row)
-}
+// const onClick = (cell, row) => {
+//   console.log('cell:', cell)
+//   console.log('row:', row)
+// }
 
-const cursorClass = {
-  cursor: 'pointer'
-}
+// const cursorClass = {
+//   cursor: 'pointer'
+// }
 
-const dataFormat = (cell, row) => {
-  return (
-    <div style={cursorClass} onClick={() => onClick(cell, row)}>{cell}</div>
-  )
-}
+// const dataFormat = (cell, row) => {
+//   return (
+//     <div style={cursorClass} onClick={() => onClick(cell, row)}>{cell}</div>
+//   )
+// }
 
 // var selectRowProp = {
 //   mode: 'radio',
@@ -51,7 +51,7 @@ ReactDOM.render(
       <TableHeaderColumn dataField='subDomain' dataSort>
         Sub-Domain
       </TableHeaderColumn>
-      <TableHeaderColumn dataField='ip' dataFormat={dataFormat} dataSort>
+      <TableHeaderColumn dataField='ip' dataSort>
         IP Address
       </TableHeaderColumn>
     </BootstrapTable>
