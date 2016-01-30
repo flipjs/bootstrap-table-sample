@@ -34,9 +34,9 @@ const dataFormat = (cell, row) => {
 // }
 
 ReactDOM.render(
-  <div className='container-fluid'>
+  <div className='container'>
     <h3>Table [{' ' + data.length + ' '}]</h3>
-    <BootstrapTable data={data} search striped hover pagination>
+    <BootstrapTable data={data} bordered={false} search striped hover pagination options={{clearSearch: true}}>
       <TableHeaderColumn
         dataField='id'
         isKey
