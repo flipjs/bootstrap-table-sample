@@ -51,7 +51,7 @@ ReactDOM.render(
       <TableHeaderColumn dataField='subDomain' dataSort>
         Sub-Domain
       </TableHeaderColumn>
-      <TableHeaderColumn dataField='ip' dataFormat={dataFormat} dataSort>
+      <TableHeaderColumn dataField='ip' dataFormat={dataFormat}>
         IP Address
       </TableHeaderColumn>
     </BootstrapTable>
